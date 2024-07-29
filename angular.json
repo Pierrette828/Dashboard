@@ -15,26 +15,66 @@
           "options": {
             "outputPath": "dist/kiaalap-angular",
             "index": "src/index.html",
-            "browser": "src/main.ts",
+             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/owl.carousel.css",
+              "src/assets/css/owl.theme.css",
+              "src/assets/css/owl.transitions.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/normalize.css",
+              "src/assets/css/meanmenu.min.css",
+              "src/assets/css/main.css",
+              "src/assets/css/educate-custon-icon.css",
+              "src/assets/css/morrisjs/morris.css",
+              "src/assets/css/scrollbar/jquery.mCustomScrollbar.min.css",
+              "src/assets/css/metisMenu/metisMenu.min.css",
+              "src/assets/css/metisMenu/metisMenu-vertical.css",
+              "src/assets/css/calendar/fullcalendar.min.css",
+              "src/assets/css/calendar/fullcalendar.print.min.css",
+              "src/assets/css/style.css",
+              "src/assets/css/responsive.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": [
+              "src/assets/js/vendor/modernizr-2.8.3.min.js",
+              "src/assets/js/vendor/jquery-1.12.4.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/wow.min.js",
+              "src/assets/js/jquery-price-slider.js",
+              "src/assets/js/jquery.meanmenu.js",
+              "src/assets/js/owl.carousel.min.js",
+              "src/assets/js/jquery.sticky.js",
+              "src/assets/js/jquery.scrollUp.min.js",
+              "src/assets/js/counterup/jquery.counterup.min.js",
+              "src/assets/js/counterup/waypoints.min.js",
+              "src/assets/js/counterup/counterup-active.js",
+              "src/assets/js/scrollbar/jquery.mCustomScrollbar.concat.min.js",
+              "src/assets/js/scrollbar/mCustomScrollbar-active.js",
+              "src/assets/js/metisMenu/metisMenu.min.js",
+              "src/assets/js/metisMenu/metisMenu-active.js",
+              "src/assets/js/morrisjs/raphael-min.js",
+              "src/assets/js/morrisjs/morris.js",
+              "src/assets/js/morrisjs/morris-active.js",
+              "src/assets/js/sparkline/jquery.sparkline.min.js",
+              "src/assets/js/sparkline/jquery.charts-sparkline.js",
+              "src/assets/js/sparkline/sparkline-active.js",
+              "src/assets/js/calendar/moment.min.js",
+              "src/assets/js/calendar/fullcalendar.min.js",
+              "src/assets/js/calendar/fullcalendar-active.js",
+              "src/assets/js/plugins.js",
+              "src/assets/js/main.js",
+              "src/assets/js/tawk-chat.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -84,15 +124,16 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/script.js"
+            ]
           }
         }
       }
