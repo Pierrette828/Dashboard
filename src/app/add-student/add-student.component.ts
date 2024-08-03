@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { FileUploadModule } from 'primeng/fileupload';
 @Component({
   selector: 'app-add-student',
   standalone: true,

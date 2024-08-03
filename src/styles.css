@@ -42,6 +42,9 @@
 /*----------------------------------------*/
 /*  1. Common
 /*----------------------------------------*/
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
 html, body {height: 100%; font-family: 'Roboto', sans-serif;font-weight:400;background:#F6F8FA;}
 .floatleft {float:left}
 .floatright {float:right}
@@ -139,46 +142,43 @@ body {}
 /*  4. left sidebar
 /*----------------------------------------*/
 .all-content-wrapper {
-    margin-left: 200px;
     transition: all 0.3s;
 }
 .left-sidebar-pro {
     z-index: 9999;
-    width: 240px;
+    width: 20px;
 }
 #sidebar {
-    min-width: 200px;
+    min-width: 20px;
     background: #fff;
     color: #fff;
-	position:fixed;
+    position: fixed;
     transition: all 0.3s;
-	z-index:999;
-	height:100%;
+    z-index: 999;
+    height: 100%;
 }
 .mini-navbar .all-content-wrapper {
-    margin-left: 80px;
+    margin-left: 40px; /* Update to match the new sidebar width */
     transition: all 0.3s;
 }
 #sidebar.active {
-    min-width: 80px;
-    max-width: 80px;
+    min-width: 40px; /* Reduce sidebar width */
+    max-width: 40px; /* Reduce sidebar width */
     text-align: center;
 }
 #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
-    display:none;
+    display: none;
 }
-
 #sidebar.active .sidebar-header strong {
     display: block;
 }
-
 #sidebar.active ul li .sidebar-right-icon {
-    display:none;
+    display: none;
 }
 .bar-button-pro {
     margin: 13px 0px;
-	font-size:16px;
-	color:#fff;
+    font-size: 16px;
+    color: #fff;
 }
 #sidebar .sidebar-header strong {
     display: none;
@@ -193,88 +193,89 @@ body {}
     margin-top: 10px;
     margin-bottom: 5px;
 }
-#sidebar.active .sidebar-header .main-logo{
-	display:none;
+#sidebar.active .sidebar-header .main-logo {
+    display: none;
 }
-#sidebar.active .sidebar-header h3{
-	display:none;
+#sidebar.active .sidebar-header h3 {
+    display: none;
 }
-#sidebar.active .sidebar-header p{
-	display:none;
+#sidebar.active .sidebar-header p {
+    display: none;
 }
-#sidebar ul li a .sidebar-right-icon{
-	float: right;
+#sidebar ul li a .sidebar-right-icon {
+    float: right;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro{
-	width:100%;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro {
+    width: 100%;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li{
-	display:block;
-	float:none;
-	position:relative;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li {
+    display: block;
+    float: none;
+    position: relative;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown{
-	left:0px;
-	top:0px;
-	opacity:0;
-	border-radius:0;
-	border:0px solid #fff;
-	box-shadow:none;
-	background:#ebebeb;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    border-radius: 0;
+    border: 0px solid #fff;
+    box-shadow: none;
+    background: #ebebeb;
 }
-.left-custom-menu-adp-wrap .dropdown-menu{
-	position: relative;
-	float: none;
+.left-custom-menu-adp-wrap .dropdown-menu {
+    position: relative;
+    float: none;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown a:hover{
-	padding:15px 30px;
-	transition:all .4s ease 0s;
-	background:#fff;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .left-menu-dropdown a:hover {
+    padding: 15px 30px;
+    transition: all .4s ease 0s;
+    background: #fff;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown{
-	opacity:1;
-	left: 0px;
-	z-index:9999;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown {
+    opacity: 1;
+    left: 0px;
+    z-index: 9999;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.chart-left-menu-std{
-	top:0px;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.chart-left-menu-std {
+    top: 0px;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.form-left-menu-std{
-	top: 0px;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.form-left-menu-std {
+    top: 0px;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.apps-left-menu-std{
-	top: 0px;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.apps-left-menu-std {
+    top: 0px;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.pages-left-menu-std{
-	top: 0px;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown.pages-left-menu-std {
+    top: 0px;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a{
-	display: block;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a {
+    display: block;
     padding: 15px 20px;
     color: #444;
     transition: all .4s ease 0s;
     font-size: 16px;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:hover, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:focus, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:active, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:visited{
-	background:#ebebeb;
-	color:#444;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:hover, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:focus, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:active, .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li a:visited {
+    background: #ebebeb;
+    color: #444;
 }
-.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .indicator-right-menu{
-	float: right;
-	font-size:12px;
+.left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .indicator-right-menu {
+    float: right;
+    font-size: 12px;
 }
 #sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li.open .left-menu-dropdown {
-    left: 80px;
+    left: 40px; /* Adjust to match the new sidebar width */
 }
 #sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .mini-dn {
-    display:none;
+    display: none;
 }
 #sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li .big-icon {
-    font-size:20px;
+    font-size: 20px;
 }
 #sidebar.active .left-custom-menu-adp-wrap ul.left-sidebar-menu-pro li > a {
     padding: 20px 20px;
 }
+
 /*----------------------------------------*/
 /*  4.1 Left Sidebar switcher
 /*----------------------------------------*/
@@ -4378,12 +4379,11 @@ div#sparklinehome canvas {
     height: 580px;
 }
 .mCSB_outside+.mCSB_scrollTools {
-    right: -15px;
+    right: px;
     margin: 0px 0px;
 }
 .message-menu .mCSB_outside+.mCSB_scrollTools, .notification-menu .mCSB_outside+.mCSB_scrollTools, .left-custom-menu-adp-wrap .mCSB_outside+.mCSB_scrollTools {
-    right: 0px;
-    margin: 0px 0px;
+
 }
 .mCS-light-1.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background-color: #006DF0; }
 .mCS-light-1.mCSB_scrollTools .mCSB_draggerRail{ background-color: #ccc; } 
@@ -4419,7 +4419,6 @@ div#sparklinehome canvas {
     margin: 0 0.5em 0.5em;
     padding: 1em 1em;
     text-decoration: none;
-
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;

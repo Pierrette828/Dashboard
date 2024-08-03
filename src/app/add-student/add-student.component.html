@@ -1,4 +1,3 @@
-
 <!-- Single pro tab review Start-->
 <div class="single-pro-review-area mt-t-30 mg-b-15">
     <div class="container-fluid">
@@ -6,8 +5,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="product-payment-inner-st">
                     <ul id="myTabedu1" class="tab-review-design">
-                        <li class="active"><a href="#description">Photo</a></li>
-                        <li><a href="#reviews"> Information de l'opérateur</a></li>
+                        <li class="active"><a href="#description">Formulaire</a></li>
                     </ul>
                     <div id="myTabContent" class="tab-content custom-product-edit">
                         <div class="product-tab-list tab-pane fade active in" id="description">
@@ -15,39 +13,61 @@
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                     <div class="review-content-section">
                                         <div id="dropzone1" class="pro-ad">
-                                            <form action="/upload"
-                                                class="dropzone dropzone-custom needsclick add-professors"
+                                            <form class="dropzone dropzone-custom needsclick add-professors"
                                                 id="demo1-upload">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
                                                         <div class="form-group alert-up-pd">
-                                                            <div class="dz-message needsclick download-custom">
-                                                                <i class="fa fa-download edudropnone"
-                                                                    aria-hidden="true"></i>
-                                                                <h2 class="edudropnone">Cliquer ici pour ajouter une
-                                                                    photo</h2>
-                                                                <p class="edudropnone"><span
-                                                                        class="note needsclick"></span></p>
-                                                                <input name="imageico" class="hd-pro-img" type="text" />
-
-                                                            </div>
+                                                            <p-fileUpload mode="basic" chooseLabel="Choose"
+                                                                chooseIcon="pi pi-upload" name="demo[]"
+                                                               
+                                                                accept="image/*" maxFileSize="1000000"
+                                                            ></p-fileUpload>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-
                                                         <div class="form-group">
                                                             <select name="gender" class="form-control">
                                                                 <option value="none" selected="" disabled="">Genre
                                                                 </option>
                                                                 <option value="0">Masculin</option>
-                                                                <option value="1">Feminin</option>
+                                                                <option value="1">Féminin</option>
                                                             </select>
+                                                        </div>
+
+                                                        <div class="input-group">
+                                                            <div class="radio-group">
+                                                                <label>
+                                                                    <input type="radio" name="operateur" value="formel"
+                                                                        required>
+                                                                    Opérateur Formel
+                                                                </label>
+                                                                <br />
+                                                                <br />
+                                                                <label>
+                                                                    <input type="radio" name="operateur"
+                                                                        value="informel" required>
+                                                                    Opérateur Informel
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="Nom">
                                                         </div>
                                                         <div class="form-group">
                                                             <input type="text" class="form-control"
-                                                                placeholder="Zone de couverture">
+                                                                placeholder="Prénoms">
                                                         </div>
+                                                        <div class="form-group">
+                                                            <input type="number" class="form-control"
+                                                                placeholder="Téléphone">
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <input type="password" class="form-control"
+                                                                placeholder="Mot de passe">
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -63,58 +83,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="product-tab-list tab-pane fade" id="reviews">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="review-content-section">
-                                        <div class="row">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <div class="devit-card-custom">
-
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Nom">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="text" class="form-control" placeholder="Prénoms">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="number" class="form-control"
-                                                            placeholder="Téléphone">
-                                                    </div>
-
-                                                    <div class="input-group">
-                                                        <div class="radio-group">
-                                                            <label>
-                                                                <input type="radio" name="operateur" value="formel"
-                                                                    required>
-                                                                Opérateur Formel
-                                                            </label>
-                                                            <label>
-                                                                <input type="radio" name="operateur" value="informel"
-                                                                    required>
-                                                                Opérateur Informel
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="password" class="form-control"
-                                                            placeholder="Mot de passe">
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <input type="password" class="form-control"
-                                                            placeholder="Confirmer mot de passe">
-                                                    </div>
-                                                    <a href="#!"
-                                                        class="btn btn-primary waves-effect waves-light">Valider</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        </div> <!-- End of #description -->
                     </div>
                 </div>
             </div>

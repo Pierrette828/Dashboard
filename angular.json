@@ -129,7 +129,9 @@
             ],
             "styles": [
               "src/styles.css",
-              "src/assets/css/style.css"
+              "src/assets/css/style.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+    "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
               "src/assets/js/script.js"

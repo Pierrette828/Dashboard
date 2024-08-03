@@ -15,6 +15,7 @@ import { RegisterComponent } from './register/register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { StaticTableComponent } from './static-table/static-table.component';
 import { WidgetsComponent } from './widgets/widgets.component';
+import { FileUploadModule } from 'primeng/fileupload';
 
 
 export const routes: Routes = [
