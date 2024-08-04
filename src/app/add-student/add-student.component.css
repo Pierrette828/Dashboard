@@ -1,0 +1,41 @@
+.custom-file-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.custom-file-input {
+  /* border: 2px solid #007bff; */
+  border-radius: 0.25rem;
+  padding: 0.75rem;
+  font-size: 16px;
+  color: #495057;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.custom-file-input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.custom-file-input::-webkit-file-upload-button:hover {
+  background: #0056b3;
+}
+
+.custom-file-input::-ms-browse {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
