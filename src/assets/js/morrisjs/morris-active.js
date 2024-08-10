@@ -51,9 +51,9 @@ Morris.Area({
         hideHover: 'auto',
         lineColors: ['#65b12d', '#933EC5 ', '#006DF0'],
         resize: true
-        
+
     });
-	
+
 Morris.Area({
         element: 'extra-area-chart',
         data: [{
@@ -105,5 +105,5 @@ Morris.Area({
         hideHover: 'auto',
         lineColors: ['#006DF0', '#933EC5', '#65b12d'],
         resize: true
-        
+
     });

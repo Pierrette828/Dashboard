@@ -20,6 +20,7 @@ import { FileUploadModule } from 'primeng/fileupload';
 
 export const routes: Routes = [
   { path: '',component:DashboardComponent,children:[
+    { path: '',component: AnalyticsComponent},
     { path: 'add-student',component: AddStudentComponent},
     { path: 'all-student', component: AllStudentsComponent},
     { path: 'analytics', component:AnalyticsComponent},
@@ -34,5 +35,5 @@ export const routes: Routes = [
     { path: 'static-table', component:StaticTableComponent},
     { path: 'widgets', component:WidgetsComponent},
 
-  ],}, 
+  ],},
 ];
